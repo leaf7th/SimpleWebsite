@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Super Animal</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="https://use.typekit.net/fml0csl.css">
+	</head>
+	<body>
+		<div id="main">
+			<div id="selector">
+				<form id="animalSelecter">
+					<div id="animalSelecterMessage">
+						<h1>Choose Your Game Character</h1>
+					</div>
+					<div id="animal1Selecter">
+						<input id="animal1" type="radio" name="animal" value="animal1" checked> <span>Bird</span>
+					</div>
+					<div id="animal2Selecter">
+						<input id="animal2" type="radio" name="animal" value="kangaroo"> <span>Get 7 Points to Unlock Kangaroo</span>
+					</div>
+					<div id="animal3Selecter">
+						<input id="animal3" type="radio" name="animal" value="koala"> <span>Get 27 Points to Unlock Koala</span>
+					</div>
+					<button id="selectorSubmit" type="button">Submit</button>
+				</form>
+			</div>
+			<div id="gameFrame">
+				<img id= "voice" src="img/open.png" alt="open" />
+				<div id="headTitle">
+					<img id="headCharacter" src="img/character0.png" alt="animal" />
+				</div>
+				<button id="startBtn" >Start</button>
+
+				<div id="bottomLand1"></div>
+				<div id="bottomLand2"></div>
+				<div id="score">
+					<div id="num1"></div>
+					<div id="num2"></div>
+					<div id="num3"></div>
+				</div>
+				<div id="tips">
+					<div id="tipTitle">
+						<h1>Do you know?</h1>
+					</div>
+					<div id="tipText">
+					</div>
+					<button id="more" type="button">More</button>
+					<button id="close" type="button">Close</button>
+				</div>
+				<div id="gameOver">
+					<div id="over">
+						<img src="img/game_over.png" alt="game over" />
+					</div>
+					<div id="message">
+						<span id="thisScore"></span>
+						<span id="historyScore"></span>
+					</div>
+					<div id="replayDiv">
+						<button id="replay">Replay</button>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</body>
+	<script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Tree.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Character.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Crash.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Bonus.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Tips.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Main.js" type="text/javascript" charset="utf-8"></script>
+</html>
